@@ -6,8 +6,9 @@ GPhisher v2
 An Advanced Google Phishing tool powered by Flask framework.
 </h4>
 
+<h5>Warning: This tool is made for Educational purposes only</h5>
+
 ## Features
-- Runs Fast
 - Easy to use
 - Saves all passwords in a database
 - Database can be cleared
