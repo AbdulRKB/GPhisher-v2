@@ -15,7 +15,7 @@ An Advanced Google Phishing tool powered by Flask framework.
 ## Installation
 Enter the Following commands:
 ```bash
-git clone https://github.com/CyberTitus/GPhisher-v2.git
+git clone https://github.com/AbdulRKB/GPhisher-v2.git
 cd GPhisher-v2
 pip3 install -r requirements.txt
 python3 app.py
